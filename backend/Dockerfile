@@ -9,11 +9,7 @@ RUN curl -fsSL https://deb.nodesource.com/setup_lts.x | bash - &&\
 
 WORKDIR /app
 
-# Copy Dependencies
-COPY packages/db ./packages/db
 
-# Install Dependencies
-RUN dart pub get -C packages/db
 
 # Resolve app dependencies.
 COPY pubspec.* ./
