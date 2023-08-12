@@ -25,13 +25,10 @@ RUN npm install prisma
 RUN dart pub global activate dart_frog_cli
 RUN dart pub global run dart_frog_cli:dart_frog build
 
-ARG JWT_ISSUER
-ARG JWT_ACCESS_SECRET
-ARG JWT_REFRESH_SECRET
 ARG DATABASE_URL
 # Ensure packages are still up-to-date if anything has changed.
 RUN dart pub get --offline
-RUN dart compile exe --define=JWT_ISSUER=${JWT_ISSUER} --define=JWT_ACCESS_SECRET=${JWT_ACCESS_SECRET} --define=JWT_REFRESH_SECRET=${JWT_REFRESH_SECRET} --define=DATABASE_URL=${DATABASE_URL} build/bin/server.dart -o build/bin/server
+RUN dart compile exe --define=DATABASE_URL=${DATABASE_URL} build/bin/server.dart -o build/bin/server
 
 # Build minimal serving image from AOT-compiled `/server` and required system
 # libraries and configuration files stored in `/runtime/` from the build stage.
