@@ -1,0 +1,18 @@
+services:
+  database:
+    image: mysql:latest
+    restart: always
+    environment:
+      MYSQL_DATABASE: 'mydb'
+      MYSQL_ROOT_PASSWORD: '12345678'
+    ports:
+      - '3306:3306'
+  backend:
+    build: ./backend
+    depends_on:
+      - database
+    ports:
+      - 8080:8080
+    environment:
+      DATABASE_URL: mysql://root:12345678@database/mydb?schema=SCHEMA
+  

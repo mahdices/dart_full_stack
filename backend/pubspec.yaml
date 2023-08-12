@@ -12,14 +12,22 @@ dependencies:
   dart_frog_auth: ^1.0.0
   dart_jsonwebtoken: ^2.8.2
   dotenv: ^4.1.0
+  json_annotation: ^4.8.1
   orm: ^3.4.4
   shared: 
-    path: ../shared
+    git:
+      url: https://github.com/mahdices/dart_full_stack.git
+      path: shared
   
   
   
 
 dev_dependencies:
+  build_runner: ^2.4.6
+  json_serializable: ^6.7.1
   mocktail: ^0.3.0
   test: ^1.19.2
   very_good_analysis: ^5.0.0
+
+assets:
+  - .env

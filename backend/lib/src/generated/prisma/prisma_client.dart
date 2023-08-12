@@ -2951,7 +2951,7 @@ class PrismaClient extends _i1.BasePrismaClient<PrismaClient> {
           r'Ly8gVGhpcyBpcyB5b3VyIFByaXNtYSBzY2hlbWEgZmlsZSwKLy8gbGVhcm4gbW9yZSBhYm91dCBpdCBpbiB0aGUgZG9jczogaHR0cHM6Ly9wcmlzLmx5L2QvcHJpc21hLXNjaGVtYQoKZ2VuZXJhdG9yIGNsaWVudCB7CiAgcHJvdmlkZXIgPSAiZGFydCBydW4gb3JtIgp9CgpkYXRhc291cmNlIGRiIHsKICBwcm92aWRlciA9ICJteXNxbCIKICB1cmwgICAgICA9IGVudigiREFUQUJBU0VfVVJMIikKfQoKbW9kZWwgQ291cnNlIHsKICBpZCAgICAgICAgU3RyaW5nICAgQGlkIEBtYXAoIl9pZCIpCiAgbmFtZSAgICAgIFN0cmluZyAgIEB1bmlxdWUKICBjcmVhdGVkQXQgRGF0ZVRpbWUgQGRlZmF1bHQobm93KCkpCn0KCm1vZGVsIFVzZXJ7CiAgaWQgU3RyaW5nIEBpZCBAbWFwKCJfaWQiKQogIHVzZXJuYW1lIFN0cmluZyBAdW5pcXVlCiAgcGFzc3dvcmQgU3RyaW5nCiAgbmFtZSBTdHJpbmcKICBjcmVhdGVkQXQgRGF0ZVRpbWUgQGRlZmF1bHQobm93KCkpCn0=',
       datasources: datasources?.toJson().cast() ?? const {},
       executable:
-          r'/Users/mahdi/MyProjects/full_stack_dart/node_modules/prisma/query-engine-darwin-arm64',
+          r'/Users/mahdi/MyProjects/full_stack_dart/backend/node_modules/prisma/query-engine-darwin-arm64',
     );
     return PrismaClient._internal(engine);
   }
